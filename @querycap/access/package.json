@@ -1,0 +1,34 @@
+{
+  "name": "@querycap/access",
+  "version": "0.4.0",
+  "files": [
+    "dist/"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@babel/runtime-corejs3": "*",
+    "@reactorx/core": "0.x",
+    "@reactorx/request": "0.x",
+    "axios": "0.19.x",
+    "date-fns": "2.x",
+    "lodash": "4.x",
+    "react": "16.x",
+    "rxjs": "6.x"
+  },
+  "dependencies": {
+    "@querycap/request": "0.3.0",
+    "public-encrypt": "4.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "monobundle": {
+    "env": "browser"
+  },
+  "scripts": {
+    "prepare": "monobundle"
+  },
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js"
+}

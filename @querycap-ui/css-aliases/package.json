@@ -1,0 +1,17 @@
+{
+  "name": "@querycap-ui/css-aliases",
+  "version": "0.1.1",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepare": "monobundle"
+  },
+  "files": [
+    "dist/"
+  ],
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js"
+}

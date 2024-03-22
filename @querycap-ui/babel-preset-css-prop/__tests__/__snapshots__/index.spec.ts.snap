@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`babel-preset-css-prop css prop 1`] = `
+"
+
+const SomeComponent = () => {
+  return (
+    <>
+      <div css={(t) => ({ color: t.color.primary })}>123</div>
+    </>
+  )
+}
+    
+ ↓ ↓ ↓ ↓ ↓ ↓
+
+import { Fragment as _Fragment } from \\"react\\";
+import { jsx as _jsx } from \\"@emotion/core\\";
+
+const SomeComponent = () => {
+  return _jsx(_Fragment, null, _jsx(\\"div\\", {
+    css: t => ({
+      color: t.color.primary
+    })
+  }, \\"123\\"));
+};  
+  "
+`;
+
+exports[`babel-preset-css-prop css prop only 1`] = `
+"
+
+const SomeComponent = () => {
+  return (
+    <div css={(t) => ({ color: t.color.primary })}>123</div>
+  )
+}
+    
+ ↓ ↓ ↓ ↓ ↓ ↓
+
+import { jsx as _jsx } from \\"@emotion/core\\";
+
+const SomeComponent = () => {
+  return _jsx(\\"div\\", {
+    css: t => ({
+      color: t.color.primary
+    })
+  }, \\"123\\");
+};  
+  "
+`;
+
+exports[`babel-preset-css-prop without css prop 1`] = `
+"
+
+const SomeComponent = () => {
+  return (
+    <>
+      <div>123</div>
+    </>
+  )
+}
+    
+ ↓ ↓ ↓ ↓ ↓ ↓
+
+import { Fragment as _Fragment } from \\"react\\";
+import { createElement as _createElement } from \\"react\\";
+
+const SomeComponent = () => {
+  return _createElement(_Fragment, null, _createElement(\\"div\\", null, \\"123\\"));
+};  
+  "
+`;

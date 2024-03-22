@@ -1,0 +1,31 @@
+{
+  "name": "@querycap-ui/texts",
+  "version": "0.3.4",
+  "license": "MIT",
+  "peerDependencies": {
+    "@emotion/core": "10.x",
+    "lodash": "4.x",
+    "react": "16.x"
+  },
+  "dependencies": {
+    "@querycap-ui/core": "0.6.4",
+    "remark-parse": "7.0.x",
+    "remark-react": "7.0.x",
+    "unified": "8.4.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "monobundle": {
+    "env": "browser"
+  },
+  "scripts": {
+    "prepare": "monobundle"
+  },
+  "files": [
+    "dist/"
+  ],
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js"
+}

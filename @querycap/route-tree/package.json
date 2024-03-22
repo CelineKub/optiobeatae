@@ -1,0 +1,27 @@
+{
+  "name": "@querycap/route-tree",
+  "version": "0.3.0",
+  "files": [
+    "dist/"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@babel/runtime-corejs3": "*",
+    "@querycap/access": "*",
+    "@reactorx/router": "0.x",
+    "lodash": "4.x",
+    "react": "16.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "monobundle": {
+    "env": "browser"
+  },
+  "scripts": {
+    "prepare": "monobundle"
+  },
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js"
+}
